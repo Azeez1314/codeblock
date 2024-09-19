@@ -1,17 +1,22 @@
 /* Task:
 
-You will be given an array and a limit value. You must check that all values in the array are below or equal to the limit value. If they are, return true. Else, return false.
+Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
-You can assume all values in the array are numbers.
+Examples:
+Input: 42145 Output: 54421
+
+Input: 145263 Output: 654321
+
+Input: 123456789 Output: 987654321
 
 Answer:
 */
 
-function smallEnough(a, limit){
-    for(let i = 0; i < a.length; i++){
-      if(a[i] > limit){
-        return false;
-      } 
-    }
-  return true;
-  }
+// Sum Numbers
+function descendingOrder(n){
+    let nth = n.toString()
+               .split('')
+               .sort((a, b) => b - a)
+               .join('')
+    return parseInt(nth)
+   }
