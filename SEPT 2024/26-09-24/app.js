@@ -16,3 +16,19 @@ function reverse(string){
     //your code here
     return string.split(' ').reverse().join(' ')
   }
+
+
+  const clock = document.getElementById('clock');
+  const text = document.getElementById('time');
+
+  const updateTime = () => {
+    const leftOffset = Math.random() * 100;
+    const currentTime = new Date();
+    const timeString = currentTime.toLocaleTimeString();
+    text.textContent = timeString
+    text.setAttribute("style", `top: ${Math.random() * 100}%; left: ${leftOffset}%`)
+  }
+
+  updateTime();
+  setInterval(updateTime, 3000);
+
