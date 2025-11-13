@@ -26,3 +26,39 @@ twice dad plus son
 function twiceAsOld(dadAge, sonAge) {
     return Math.abs(dadAge - 2 * sonAge)
 }
+
+
+
+
+const uniqSort = function(arr){
+    const breadcrumbs = {}
+    let result = [arr[0]]
+
+    for(let i = 1; i < arr.length; i++){
+        if(!breadcrumbs[arr[i]]){
+            result.push(arr[i])
+            breadcrumbs[arr[i]] = true;
+    }}
+    return result.sort((a, b) => a - b)
+}
+
+
+uniqSort([4,4,5,6,3,2,1,1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
