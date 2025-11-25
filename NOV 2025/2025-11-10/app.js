@@ -5,6 +5,8 @@ current age of his son (years)
 Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old). The answer is always greater or equal to 0, no matter if it was in the past or it is in the future.
 
 
+// PREP acronym for solving coding problems (Parameters, Return, Example, Pseudocode),
+
 // P
 We need to write a function that takes two parameters,
 and return one parameter twice of the,
@@ -30,20 +32,6 @@ function twiceAsOld(dadAge, sonAge) {
 
 
 
-const uniqSort = function(arr){
-    const breadcrumbs = {}
-    let result = [arr[0]]
-
-    for(let i = 1; i < arr.length; i++){
-        if(!breadcrumbs[arr[i]]){
-            result.push(arr[i])
-            breadcrumbs[arr[i]] = true;
-    }}
-    return result.sort((a, b) => a - b)
-}
-
-
-uniqSort([4,4,5,6,3,2,1,1])
 
 
 
