@@ -1,21 +1,16 @@
-// Task:
-// Sentence Smash
-// Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+// Description:
+// We need a function that can transform a string into a number. What ways of achieving this do you know?
 
-// Example
-// ['hello', 'world', 'this', 'is', 'great'] => 'hello world this is great'
+// Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
 
-
-// */
-
-// function smash (words) {
-
-// }
+// Examples
+// "1234" --> 1234
+// "605"  --> 605
+// "1405" --> 1405
+// "-7" --> -7
 
 
-function smash (words) {
-    return words.join(' ');
-    }
-    
-    
-    console.log(smash(['hello', 'world', 'this', 'is', 'great']))
+const stringToNumber = function(str){
+   
+    return parseInt(str);
+  }
